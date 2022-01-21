@@ -1,5 +1,9 @@
 {
     "java.project.sourcePaths": ["src"],
     "java.project.outputPath": "bin",
-    "git.ignoreLimitWarning": true
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "gson-2.8.5.jar",
+        "javaSDK-2.2.jar"
+    ],
 }
