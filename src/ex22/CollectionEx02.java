@@ -1,26 +1,13 @@
 package ex22;
 
 import java.util.HashSet;
-
-/**
- * MyInteger
- */
-class MyInteger {
-    int num;
-
-    MyInteger(int num) {
-
-    }
-
-    public String toString() {
-        return num + " ";
-    }
-}
+import java.util.Iterator;
+import java.util.Set;
 
 public class CollectionEx02 {
     public static void main(String[] args) {
-
-        HashSet<Integer> datas = new HashSet<>();
+        // 제네릭에는 기본자료형을 담을 수 없다. Wrapper 클래스 필요!!
+        Set<Integer> datas = new HashSet<>();
         datas.add(10);
         datas.add(20);
         datas.add(20);
@@ -28,9 +15,13 @@ public class CollectionEx02 {
         datas.add(40);
 
         datas.remove(10);
+
         System.out.println(datas.size());
         System.out.println(datas);
-        // MyInteger i = new MyInteger();
-    }
 
+        Iterator<Integer> its = datas.iterator();
+        while (its.hasNext()) {
+            System.out.println(its.next());
+        }
+    }
 }
