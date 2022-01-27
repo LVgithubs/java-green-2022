@@ -59,10 +59,6 @@ public class ResponseDto<T> {
                     private int prestigeCharge;
                     private String vihicleId;
                 }
-
-                public List<FlightItem> getFlightItem() {
-                    return null;
-                }
             }
         }
     }
