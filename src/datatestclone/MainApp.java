@@ -27,7 +27,7 @@ public class MainApp {
 
         List<FlightItem> flightList = DownloadFlight.getFlightList(depPlandTime, depAirportNm, arrAirportNm);
 
-        // System.out.println(flightList);
+        System.out.println(flightList);
 
         for (int i = 0; i < flightList.size(); i++) {
             System.out.println("=====================");
