@@ -10,7 +10,6 @@ import java.util.Map;
 
 import com.google.gson.Gson;
 
-import datatestclone.*;
 import datatestclone.ResponseDto.Response.Body.Items.AirportItem;
 
 public class DownloadAirport {
