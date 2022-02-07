@@ -1,9 +1,15 @@
 {
     "java.project.sourcePaths": ["src"],
     "java.project.outputPath": "bin",
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "gson-2.8.5.jar",
-        "javaSDK-2.2.jar"
-    ],
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/**/*.jar",
+            "gson-2.8.5.jar",
+            "javaSDK-2.2.jar",
+            "c:\\Users\\user\\Downloads\\lombok.jar"
+        ],
+        "exclude": [
+            "lib/lombok.jar"
+        ]
+    },
 }
