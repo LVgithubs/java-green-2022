@@ -22,8 +22,10 @@ public class CovidMainApp {
         for (int i = result.size() - 1; i > 0; i--) {
             System.out.println("==========================");
             System.out.println(result.get(i).getStateDt() + "일자의 코로나 현황");
-            System.out.println("확진자 수 : " + result.get(i).getDecideCnt());
-            System.out.println("사망자 수 : " + result.get(i).getDecideCnt());
+            System.out
+                    .println("누적 의심 신고 검사자 : " + result.get(i).getAccExamCnt());
+            System.out.println("확진자 수 : " + (result.get(i - 1).getDecideCnt() - result.get(i).getDecideCnt()));
+            System.out.println("사망자 수 : " + (result.get(i - 1).getDeathCnt() - result.get(i).getDeathCnt()));
             System.out.println("==========================");
 
             // System.out.println();
